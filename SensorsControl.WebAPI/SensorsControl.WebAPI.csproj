@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SensorsControl.Services\SensorsControl.Services\SensorsControl.Services.csproj" />
+    <ProjectReference Include="..\SensorsControl.Services\SensorsControl.Services.csproj" />
   </ItemGroup>
 
 </Project>

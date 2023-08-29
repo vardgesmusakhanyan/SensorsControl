@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorsControl.WebAPI", "SensorsControl.WebAPI\SensorsControl.WebAPI\SensorsControl.WebAPI.csproj", "{68E3AABA-2AED-4F29-BADA-BB0D099E20B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorsControl.Repositories", "SensorsControl.Repositories\SensorsControl.Repositories.csproj", "{627270F5-6CF1-4B6E-8AAF-9A0230D910BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorsControl.Services", "SensorsControl.Services\SensorsControl.Services\SensorsControl.Services.csproj", "{9A64C8F9-E107-4FAB-A77D-869E0A7AB8BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorsControl.Services", "SensorsControl.Services\SensorsControl.Services.csproj", "{48D61684-4C67-4563-9309-96C766DE9752}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorsControl.Repositories", "SensorsControl.Repositories\SensorsControl.Repositories\SensorsControl.Repositories.csproj", "{653873FE-8D59-4554-9CDE-B58B32D6B3C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorsControl.WebAPI", "SensorsControl.WebAPI\SensorsControl.WebAPI.csproj", "{2CA36925-1465-4FC7-B9DF-076967CBDE83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{68E3AABA-2AED-4F29-BADA-BB0D099E20B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68E3AABA-2AED-4F29-BADA-BB0D099E20B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68E3AABA-2AED-4F29-BADA-BB0D099E20B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68E3AABA-2AED-4F29-BADA-BB0D099E20B9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9A64C8F9-E107-4FAB-A77D-869E0A7AB8BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A64C8F9-E107-4FAB-A77D-869E0A7AB8BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A64C8F9-E107-4FAB-A77D-869E0A7AB8BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A64C8F9-E107-4FAB-A77D-869E0A7AB8BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{653873FE-8D59-4554-9CDE-B58B32D6B3C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{653873FE-8D59-4554-9CDE-B58B32D6B3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{653873FE-8D59-4554-9CDE-B58B32D6B3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{653873FE-8D59-4554-9CDE-B58B32D6B3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{627270F5-6CF1-4B6E-8AAF-9A0230D910BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{627270F5-6CF1-4B6E-8AAF-9A0230D910BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{627270F5-6CF1-4B6E-8AAF-9A0230D910BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{627270F5-6CF1-4B6E-8AAF-9A0230D910BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48D61684-4C67-4563-9309-96C766DE9752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48D61684-4C67-4563-9309-96C766DE9752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48D61684-4C67-4563-9309-96C766DE9752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48D61684-4C67-4563-9309-96C766DE9752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CA36925-1465-4FC7-B9DF-076967CBDE83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CA36925-1465-4FC7-B9DF-076967CBDE83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CA36925-1465-4FC7-B9DF-076967CBDE83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CA36925-1465-4FC7-B9DF-076967CBDE83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
