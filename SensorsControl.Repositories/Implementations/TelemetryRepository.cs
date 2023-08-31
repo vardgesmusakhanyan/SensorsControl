@@ -32,7 +32,7 @@ namespace SensorsControl.Repositories
         public async Task<DailyTelemetryEntity> GetAsync(int deviceId, DateTime date)
         {
             var allEntities = GetAllAsync(deviceId);
-            return await allEntities.FirstOrDefaultAsync(e => e.Date == date);
+            return await allEntities.FirstOrDefaultAsync(e => e.Date.Date == date.Date);
         }
 
         public async Task<int> SaveChangesAsync()
