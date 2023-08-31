@@ -76,7 +76,7 @@ class Simulation
         double maxVal = GenerateRandomNumber(random, 200, 400);
         var val = minVal == 0 ? maxVal : minVal;
 
-        if (val == 0 || DateTimeOffset.UtcNow < noon)
+        if (DateTimeOffset.UtcNow < noon)
         {
             val += random.NextDouble() * 10;
             val = Math.Min(val, maxVal);
