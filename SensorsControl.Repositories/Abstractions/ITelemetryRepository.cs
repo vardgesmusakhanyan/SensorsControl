@@ -9,10 +9,10 @@ namespace SensorsControl.Repositories
 {
     public interface ITelemetryRepository
     {
-        public Task SaveChangesAsync();
-        public Task AddTelemetryDataAsync(int deviceId, TelemetryEntity entity);
+        public Task<int> SaveChangesAsync();
+        public Task<int> UpdateAsync(DailyTelemetryEntity entity);
         public Task<DailyTelemetryEntity> GetAsync(int deviceId, DateTime date);
-        public Task<IQueryable<DailyTelemetryEntity>> GetAllAsync(int deviceId);
+        public IQueryable<DailyTelemetryEntity> GetAllAsync(int deviceId);
 
 
     }

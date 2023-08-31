@@ -9,6 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorsControl.Services", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorsControl.WebAPI", "SensorsControl.WebAPI\SensorsControl.WebAPI.csproj", "{2CA36925-1465-4FC7-B9DF-076967CBDE83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorsControl.Simulation", "SensorsControl.Simulation\SensorsControl.Simulation.csproj", "{D55DE2EA-A0D1-4FA8-B779-A6744A16D3BE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2CA36925-1465-4FC7-B9DF-076967CBDE83} = {2CA36925-1465-4FC7-B9DF-076967CBDE83}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +32,10 @@ Global
 		{2CA36925-1465-4FC7-B9DF-076967CBDE83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CA36925-1465-4FC7-B9DF-076967CBDE83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CA36925-1465-4FC7-B9DF-076967CBDE83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D55DE2EA-A0D1-4FA8-B779-A6744A16D3BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D55DE2EA-A0D1-4FA8-B779-A6744A16D3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D55DE2EA-A0D1-4FA8-B779-A6744A16D3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D55DE2EA-A0D1-4FA8-B779-A6744A16D3BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

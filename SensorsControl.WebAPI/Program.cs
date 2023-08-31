@@ -1,6 +1,8 @@
 using SensorsControl.Services;
+using SensorsControl.Repositories.EntityFrameworkCore;
 using AutoMapper;
 using SensorsControl.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddDbContext<SensorsControlContext>(opt =>
+opt.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 builder.Services.AddScoped<ITelemetryService, TelemetryService>();
 builder.Services.AddScoped<ITelemetryRepository, TelemetryRepository>();
 

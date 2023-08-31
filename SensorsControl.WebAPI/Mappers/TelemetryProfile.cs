@@ -13,7 +13,8 @@ namespace SensorsControl.WebAPI.Mappers
                 .ForMember(dst => dst.Time, opt => opt.MapFrom(src => ConvertToDateTime(src.Time)));
             CreateMap<UnitModel, UnitDto>()
                 .ForMember(dst => dst.Date, opt => opt.MapFrom(src => src.Date.ToString("yyyy-MM-dd")));
-            CreateMap<TelemetryModel, TelemetryEntity>();
+            CreateMap<TelemetryModel, TelemetryEntity>()
+                .ForMember(dst => dst.Date, opt => opt.MapFrom(src => src.Time));
             CreateMap<DailyTelemetryEntity, UnitModel>()
                 .ForMember(dst => dst.MaxIlluminance, opt => opt.MapFrom(src => src.DailyRecords.MaxBy(rc => rc.Illum)!.Illum));
         }
