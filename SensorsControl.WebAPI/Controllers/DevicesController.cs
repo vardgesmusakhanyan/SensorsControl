@@ -24,9 +24,14 @@ namespace SensorsControl.WebAPI.Controllers
         public async Task<IActionResult> Telemetry(int deviceId, [FromBody] List<TelemetryDto> data)
         {
             var model = _mapper.Map<List<TelemetryModel>>(data);
-            await _telemetryService.AddAsync(deviceId, model);
+            var result = await _telemetryService.AddAsync(deviceId, model);
 
-            return Ok();
+            if(result)
+            {
+                return Ok();
+            }
+
+            return BadRequest();
         }
 
         [HttpGet]

@@ -23,7 +23,7 @@ namespace SensorsControl.Services
             _mapper = mapper;
         }
 
-        public async Task AddAsync(int deviceId, List<TelemetryModel> models)
+        public async Task<bool> AddAsync(int deviceId, List<TelemetryModel> models)
         {
             var tEntities = _mapper.Map<List<TelemetryEntity>>(models);
             foreach (var tEntity in tEntities)
@@ -40,7 +40,7 @@ namespace SensorsControl.Services
                 dEntity.DailyRecords.Add(tEntity);
                 await _telemetryRepository.UpdateAsync(dEntity);
             }
-            await _telemetryRepository.SaveChangesAsync();
+            return await _telemetryRepository.SaveChangesAsync() == 1;
         }
 
         public async Task<List<UnitModel>> GetLastMonthDataAsync(int deviceId)

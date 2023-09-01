@@ -10,6 +10,6 @@ namespace SensorsControl.Services
     public interface ITelemetryService
     {
         Task<List<UnitModel>> GetLastMonthDataAsync(int deviceId);
-        Task AddAsync(int deviceId, List<TelemetryModel> model);
+        Task<bool> AddAsync(int deviceId, List<TelemetryModel> model);
     }
 }
